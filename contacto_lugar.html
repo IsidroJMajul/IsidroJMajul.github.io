@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contacto_lugar.css">
+    <title>Document</title>
+</head>
+
+<header>
+    <div>Redes sociales</div>
+    <!-- Agregar barra de navegación -->
+    <div>
+        <a href="">Quiénes somos</a>
+        <a href="">Objetivo</a>
+        <a href="">Productos</a>
+        <a href="">Novedades</a>
+    </div>
+    <!-- Dentro de la barra, colocar: 'Quiénes somos', 'Objetivo', '...' -->
+    
+</header>
+
+<body>
+
+    <h1><u>Legal-IT</u></h1>
+    <h2>Formulario de registro</h2>
+    <form action="show_data.html" target="_blank" id="formulario">
+        <img src="img/user-tie-solid.svg" height="50px">
+        <label for="firstname">Usuario: &nbsp;&nbsp;</label><input size="30" type="text" name="firstname" id="usuario"> 
+        <br>
+        <br>
+        <img src="img/envelope-solid.svg" height="50px">
+        <label for="mail">Mail: &nbsp;&nbsp;</label><input type="email" name="mail" id="mail"> <br><br>
+        
+        <!-- JS: Agregar "drop-down lists" con  Países, Provincia/Estado/Region, Ciudad-->
+        <img src="img/location-dot-solid.svg" height="50px">
+        <ul>
+            <li>
+                <label for="country" required>País: &nbsp;&nbsp;</label>
+                <select id="country" name="country">
+                    <option value="Arg">Argentina</option>
+                        <option value="Uy">Uruguay</option>
+                        <option value="Par">Paraguay</option>
+                        <option value="Ch">Chile</option>
+                        <option value="Bol">Bolivia</option>
+                        <option value="Br">Brasil</option>
+                    </select>
+            </li>
+            <br>
+            <br>
+            <li>
+                <label for="province">Provincia / Estado / Región: &nbsp;&nbsp;</label><input type="text" name="city">
+            </li>
+            <br>
+            <br>
+            <li>
+                <label for="city">Ciudad: &nbsp;&nbsp;</label><input type="text" name="city">
+            </li>
+            <br>
+            <br>
+            <li>
+                <label for="zipcode">Código Postal: &nbsp;&nbsp;</label><input type="text" name="zipcode">
+            </li>
+        </ul>
+        <br>
+        <br>
+        <img src="img/comment-dots-solid.svg" height="50px">
+        <label for="comments_queries">Comentarios / Consultas:</label>
+        <br>
+        <br>
+        <textarea name="comments_queries" id="comment" placeholder="..." rows="10" cols="50"></textarea>
+        <br>
+        <br>
+        <img src="img/paper-plane-solid.svg" height="50px">
+        <input type="submit" id="enviar">
+        <input type="reset">
+        
+        <h2>Nuestras oficinas</h2>
+        <!-- Agregar: Direccion, nro telefono, mail, etc. -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1404.9615782139574!2d-71.30107519661375!3d-41.13552790925144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1649541234994!5m2!1ses!2sar" width="300" height="300" style="border:0;" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <script src="js/contacto_lugar.js"></script>
+    </body>
+
+    <footer class="pie">
+        <div>Aviso legal</div>
+        <div>
+            <a href="contacto_lugar.html" target="_blanck">Contacto</a>
+        </div>
+        <div>Copyright - 2022</div>
+        <div>Argentina</div>
+    </footer>
+    
+</html>
