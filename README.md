@@ -1,2 +1,2 @@
 # IsidroJMajul.github.io
-Legal-It
+Directo al Derecho
